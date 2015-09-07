@@ -48,8 +48,7 @@
             var map = new google.maps.Map(mapCanvas, mapOptions);
 
             var marker = new google.maps.Marker({
-                position: myLatLng,
-                title:"Sala Turing"
+                position: myLatLng
             });
 
             // To add the marker to the map, call setMap();
@@ -78,9 +77,6 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
                     <li>
                         <a class="page-scroll" href="#topics">Topics</a>
                     </li>
@@ -111,22 +107,47 @@
                 <h2>Challenges, approaches and social aspects</h2>
                 <br/>
                 <h3>Bilbao, 15th October 2015</h3>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+                <p class="text-faded" id="aim">The purpose of the workshop is to enable dissemination of MOVESMART results to the relevant scientific / industrial communities as well as to establish coordinated activities between ongoing smart cities projects.</p>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll" id="about-btn">Find Out More</a>
             </div>
-        </div>
-    </header>
-
-    <section class="bg-primary" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Aim</h2>
-                    <hr class="light">
-                    <p class="text-faded">The purpose of the workshop is to enable dissemination of MOVESMART results to the relevant scientific / industrial communities as well as to establish coordinated activities between ongoing smart cities projects.</p>
+            <div class="header-content-inner" id="logos">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="service-box">
+                            <a href="http://www.movesmartfp7.eu">
+                                <img src="./img/movesmart.png" style="height:70px;">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="service-box">
+                            <a href="http://ec.europa.eu/index_en.htm">
+                                <img src="./img/europeanCommission.png" style="height:70px;">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="service-box">
+                            <a href="http://cordis.europa.eu/fp7/home_en.html">
+                                <img src="./img/seventhFramework.png" style="height:70px;">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="service-box">
+                            <a href="http://energia.deusto.es" id="d_energy">
+                                <img src="./img/d-logo.png" style="height:35px;"><span> DeustoTech Energy</span>
+                            </a>
+                            <br/>
+                            <a href="http://morelab.deusto.es/">
+                                <img src="./img/morelab.png" style="height:30px;">
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </header>
 
     <section id="topics">
         <div class="container">
@@ -162,9 +183,7 @@
                     <p class="text-faded">The workshop will take place at the premises of University of Deusto in Bilbao, Spain.</p>
                     <div class="col-lg-6 col-md-6 col-sm-6 text-left">
                         <p class="text-faded" id="address">
-                            Sala Turing (2nd floor), Faculty of Engineering 
-                            <br/>
-                            (ESIDE Building)
+                            Faculty of Engineering (ESIDE Building)
                             <br/>
                             University of Deusto
                             <br/>
@@ -197,7 +216,9 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Registration</h2>
                     <hr class="light">
-                    <p class="text-faded">To register, please fill in the Registration Form. The deadline for registration is ??/??/2015.</p>
+                    <p class="text-faded">Registration is free, but mandatory. The deadline for registering is ??/??/2015.
+                    <br/>
+                    Please fill in the form below to register. A confirmation email will be sent to your email.</p>
                     <form action="https://docs.google.com/forms/d/1V2sj_Oo33vvnraDoSA271t3eCrd7L1AX1w6-DaOtzjk/formResponse" method="POST" id="ss-form" target="_self" onsubmit=""><ol role="list" class="ss-question-list" style="padding-left: 0">
                         <div class="ss-form-question errorbox-good" role="listitem">
                             <div dir="auto" class="ss-item ss-item-required ss-text">
@@ -248,47 +269,11 @@
         </div>
     </section>
 
-    <section id="logos">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <a href="http://www.movesmartfp7.eu">
-                            <img src="./img/movesmart.png" style="height:70px;">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <a href="http://ec.europa.eu/index_en.htm">
-                            <img src="./img/europeanCommission.png" style="height:70px;">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <a href="http://cordis.europa.eu/fp7/home_en.html">
-                            <img src="./img/seventhFramework.png" style="height:70px;">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <a href="http://energia.deusto.es" id="d_energy">
-                            <img src="./img/d-logo.png" style="height:35px;"><span> DeustoTech Energy</span>
-                        </a>
-                        <br/>
-                        <a href="http://morelab.deusto.es/">
-                            <img src="./img/morelab.png" style="height:30px;">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center" id="copyrights">
-                    <p>Image: <a href="http://unsplash.com">Unsplash</a></p>
+                    <p>Images: <a href="http://unsplash.com">Unsplash</a></p>
                 </div>
             </div>
         </div>
