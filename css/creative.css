@@ -543,6 +543,13 @@ body {
     padding-bottom: 0;
 }
 
+#d_energy {
+    color: rgb(153, 153, 153);
+    font-family: 'Open Sans', cursive;
+    font-size: 20px;
+    text-decoration: none;
+}
+
 #copyrights {
     margin-top: 90px;
 }
