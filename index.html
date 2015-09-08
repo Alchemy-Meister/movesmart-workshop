@@ -71,7 +71,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">1st MOVESMART Workshop</a>
+                <a class="navbar-brand page-scroll" href="#page-top">1st MOVESMART WORKSHOP</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -110,12 +110,12 @@
                 <p class="text-faded" id="aim">The purpose of the workshop is to enable dissemination of MOVESMART results to the relevant scientific / industrial communities as well as to establish coordinated activities between ongoing smart cities projects.</p>
                 <a href="#topics" class="btn btn-primary btn-xl page-scroll" id="about-btn">Find Out More</a>
             </div>
-            <div class="header-content-inner" id="logos">
+            <div id="logos">
                 <div class="row">
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="service-box">
                             <a href="http://www.movesmartfp7.eu">
-                                <img src="./img/movesmart.png" style="height:70px;">
+                                <img src="./img/movesmart.png" style="height: 70px; padding-top:30px;">
                             </a>
                         </div>
                     </div>
@@ -136,7 +136,7 @@
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="service-box">
                             <a href="http://energia.deusto.es" id="d_energy">
-                                <img src="./img/d-logo.png" style="height:35px;"><span> DeustoTech Energy</span>
+                                <img src="./img/DeustoTech-Energy.jpg" style="height:35px;">
                             </a>
                             <br/>
                             <a href="http://morelab.deusto.es/">
@@ -216,7 +216,7 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Registration</h2>
                     <hr class="light">
-                    <p class="text-faded">Registration is free, but mandatory. The deadline for registering is ??/??/2015.
+                    <p class="text-faded" id="registration-text">Registration is free, but mandatory. The deadline for registering is ??/??/2015.
                     <br/>
                     Please fill in the form below to register. A confirmation email will be sent to your email.</p>
                     <form action="https://docs.google.com/forms/d/1V2sj_Oo33vvnraDoSA271t3eCrd7L1AX1w6-DaOtzjk/formResponse" method="POST" id="ss-form" target="_self" onsubmit=""><ol role="list" class="ss-question-list" style="padding-left: 0">
@@ -336,6 +336,18 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
+
+    <script>
+        var today = new Date();
+        var deadline = new Date();
+        // Month range goes from 0 to 11.
+        // TODO - Change deadline date with real date.
+        deadline.setFullYear(2015, 07, 15);
+        if(today >= deadline) {
+            $("form").hide();
+            $("#registration-text").text("Registration is not available yet.");
+        } 
+    </script>
 
 </script>
 
