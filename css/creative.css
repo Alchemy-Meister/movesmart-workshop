@@ -352,6 +352,10 @@ header .header-content {
     }
 }
 
+#venue-footer {
+    margin-top: 40px;
+}
+
 @media(min-width:992px) {
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
         font-size: 16px;
