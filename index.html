@@ -207,7 +207,7 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Agenda</h2>
                     <hr>
-                    <p>To be released soon.</p>
+                    <p>The agenda of the workshop is available for download <a target="_blank" href="./MOVESMART_1st_workshop_official_agenda_v20150922.pdf">here</a>.</p>
                 </div>
             </div>
         </div>
@@ -219,9 +219,7 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Registration</h2>
                     <hr class="light">
-                    <p class="text-faded" id="registration-text">Registration is free, but mandatory. The deadline for registering is ??/??/2015.
-                    <br/>
-                    Please fill in the form below to register. A confirmation email will be sent to your email.</p>
+                    <p class="text-faded" id="registration-text">It is mandatory to register to confirm your attendance at this workshop. Please fill in the Registration Form below.</p>
                     <form action="https://docs.google.com/forms/d/1V2sj_Oo33vvnraDoSA271t3eCrd7L1AX1w6-DaOtzjk/formResponse" method="POST" id="ss-form" target="_self" onsubmit=""><ol role="list" class="ss-question-list" style="padding-left: 0">
                         <div class="ss-form-question errorbox-good" role="listitem">
                             <div dir="auto" class="ss-item ss-item-required ss-text">
@@ -345,10 +343,9 @@
         var deadline = new Date();
         // Month range goes from 0 to 11.
         // TODO - Change deadline date with real date.
-        deadline.setFullYear(2015, 07, 15);
+        deadline.setFullYear(2015, 9, 15);
         if(today >= deadline) {
             $("form").hide();
-            $("#registration-text").text("It is mandatory to register to confirm your attendance at this workshop. The registration process will be available soon.");
         } 
     </script>
 
