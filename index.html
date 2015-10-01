@@ -207,7 +207,7 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Agenda</h2>
                     <hr>
-                    <p>The agenda of the workshop is available for download <a target="_blank" href="./MOVESMART_1st_workshop_official_agenda_v20150922.pdf">here</a>.</p>
+                    <p>The agenda of the workshop is available for download <a target="_blank" href="./MOVESMART_1st_workshop_official_agenda_v20150928-3.pdf">here</a>.</p>
                 </div>
             </div>
         </div>
@@ -315,6 +315,35 @@
         </div>
     </section>
 
+    <section id="support" class="text-center">
+        <div class="container">
+            <div class="row">
+                <p>Supported by</p>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="service-box">
+                        <a href="http://ec.europa.eu/index_en.htm">
+                            <img src="./img/europeanCommission.png" style="height:70px;">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="service-box">
+                        <a href="http://www.spri.eus/en">
+                            <img src="./img/spri.png" style="height:70px;">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="service-box">
+                        <a href="http://www.deusto.es/cs/Satellite/deusto/en/universidad-deusto?cambioidioma=si">
+                            <img src="./img/logoUDcast_trilingT_300.jpg" style="height:70px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="footer">
         <div class="container">
             <div class="row">
@@ -345,7 +374,8 @@
         // TODO - Change deadline date with real date.
         deadline.setFullYear(2015, 9, 15);
         if(today >= deadline) {
-            $("form").hide();
+            $("#ss-submit").hide();
+            $(".ss-password-warning").css("margin-top", "30px");
         } 
     </script>
 
