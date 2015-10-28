@@ -276,6 +276,10 @@ header .header-content {
     margin-top: 0;
 }
 
+.registration-closed {
+    padding-top: 20px;
+}
+
 .service-box {
     margin: 50px auto 0;
     max-width: 400px;
@@ -290,6 +294,21 @@ header .header-content {
 #topics {
     text-align: left;
 }
+
+#presentations {
+    padding-top: 20px;
+}
+
+.presentation-list {
+    text-align: left;
+    font-size: 16px;
+}
+
+.presentation-list-sublevel {
+    text-align: left;
+    font-size: 14px;
+}
+
 
 .service-box p {
     margin-bottom: 0;
